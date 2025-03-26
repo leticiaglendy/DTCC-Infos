@@ -1,0 +1,27 @@
+RECEITINHA GITBASH
+
+- git config --global user.name "Nome Exemplo"
+- git config --global user.email "nomeexemplo@hotmail.com"
+- git config --global --list (confirmar informações de usuário)
+- git clone link_repositorio
+- code .
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+COMMIT
+
+- git status (verficar a situação atual do repositório para que assim o github possa reconhecer as pastas antes de fazer o commit)
+- git add . ou git add "nome_do_arquivo" (para adicionar tudo que você colocou na sexta e/ou para adicionar um documento específico e ficar pronto pra commitar)
+- git commit -m "mensagemdocommit"(commit/comentário)
+- git status (ver se está na sexta)
+- git push origin main(enviar repositório)
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HACKS
+
+- ls (lista as pastas)
+- cd (caminho projeto)
+- ctrl + insert (cola as informações no gitbash)
+- ctrl f2 (renomeia as variáveis no vscode)
+- clear (limpa o cmd)

@@ -1,0 +1,68 @@
+	O repositório é onde está no galho principal do seu projeto no GitHub, chamado também de ambiente de produção, dentro do repositório está a main que é a área onde o projeto está pronto para ser utilizado. Em várias empresas e projetos é feita uma copia da main e assim se cria o ambiente de desenvolvimento, nele vai ter o ambiente de homologação, que é a versão beta ou a mais nova que não lançou ainda na main, nessa área de homologação vai ter os feedbacks que vão ser ou não preparadas para serem lançadas no galho principal(main). Após o feedback do projeto que estava em edição, essa cópia editada que foi feita no ambiente de desenvolvimento vai ser enviada para uma branch da main que vai atualizar e enviar para a main principal do GitHub. Ou seja, temos um projeto principal, criaremos uma cópia dele para fazer modificações e depois de recebermos um feedback dessa cópia vamos anexar ela novamente ao projeto principal através do merge.
+
+Merge ou Mergear: significa juntar as novidades na main principal
+
+CRIANDO UMA BRANCH
+
+- Dentro do git bash execute o seguinte código:
+	git checkout -b nome_branch (ex: git checkout -b cria_tela_login ou git checkout -b teste/nome sobrenome ou git checkout -b meu nome/o_que_foi_feito)
+- Após a criação da branch você vai estar automaticamente dentro dela
+- Para voltar para a Main(principal) execute o seguinte código:
+	git checkout main
+- Para ir para a brench escolhida digite:
+	git checkout nome_branch(Ex: git checkout primeira_branch)
+- Para salvar qualquer modificação da branch execute os seguintes códigos:
+	git status
+	git add .
+	git commit -m "exemplo_comentario"
+	git push (De início ele não vai subir nenhuma informação, só vai indicar o comando certo a ser executado para subir essas informações da branch - Ex: git push --set-upstream origin primeira_branch)
+	git push --set-upstream origin primeira_braqnch
+
+	*o git pull puxa as atualizações, se vc tiver no seu próprio repositório ele não funciona*
+- para ver se as branchs estão no sistema, entrem no GitHub vai no repositório clica em main, no canto superior esquerdo que vai aparecer todas as branchs.
+
+---------------------------------------------------------------------------------------------------------------
+
+SALVANDO INFORMAÇÕES DA BRANCH NA MAIN PRINCIPAL NO GITHUB
+
+- Dentro do github no seu repositório vá na barra de seleção superior e clique em "Pull Requests", que serve para solicitar que a branch seja anexada na Main.
+- Quando uma branch for finalizada e estiver pronta para ser anexada a Main vai ter dentro da aba "Pull Requests" um botão chamado "Compare & pull request"
+- Clique nele e vai abrir uma janela importante com informações da branch.
+- A partir de agora estaremos fazendo o início de uma merge request.
+- Em cima da aba "add a titlle" tem uma barra que serve para você escolher para onde quer mandar a alteração da branch, seja da branch para a main ou da main para a branch(main <- branch)
+- Selecione a melhor opção para o projeto
+- Se aparecer o texto "able to merge" significa que a branch está pronta para alteração e para ser enviada.
+- Coloque o título e a descrição que você quiser para esse processo (no título é bom ser suscinto e na descrição detalhar de forma objetiva e clara)
+- Finalizado os detalhamentos clique em "create pull request"
+- Em seguida, vá novamente na aba "pull requests" que lá vai conter os nomes e a ordem que as branchs foram criadas.
+- Você pode verificar e fazer comentários em cada linha do código e um comentário geral(reviews).
+- Por fim, clique em "merge pull request" e "confirm merge", pois assim será salvo as informações da branch.
+
+---------------------------------------------------------------------------------------------------------------
+
+RESOLVENDO OS CONFLITOS DE UMA BRANCH
+
+Ocorre quando dois deselvolvedores editam a mesma linha do mesmo arquivo.  Como resolver esse problema?
+
+- No github clica no "pull request"
+- Vai aparecer uma mensagem "This branch has conflict ..."
+- Essa alteração é sempre feita no computador e pelo colega que iniciou o conflito
+- Clique no botão de "Resolve Conflicts"
+- Mude para a sua branch e dê git pull por garantia
+- Em seguida use o comando:
+	git pull origin main(para puxar as alterações da branch/main que deu conflito)
+- Vai aparecer visualmente no vscode as mudanças feitas
+	"head": o que estava
+	"reps": o que está vindo(da outra pessoa) 
+	vai aparecer acima desses comandos visuais as opções de "aceitar alteração atual", "aceitar alteração de entrada" e "aceitar ambas as alterações", além de comparar ambas as alterações.
+- Quando for pouco código clique em aceitar ambas as alterações que vai mesclar.
+- Arruma da forma que quiser, salve e assim vai ser resolvido.
+- Para mandar de volta ao git e fazer a branch atualizar digite os seguintes comandos:
+	git status 
+	git add .
+	git commit -m "resolve conglito de merge"
+	git push
+	No github faça o merge
+- O git flow é onde estarão as branchs. O correto é criar uma branch, fazer todas as alterações e teste e, por fim, mandar para a main e fazer o merge.
+	
+*O programador mais habilidoso será responsável por enviar os branchs para a main e responder os pull requests*
