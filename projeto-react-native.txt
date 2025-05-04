@@ -1,0 +1,26 @@
+Projeto React-Native
+
+Possiveis erros ou conflitos:
+desinstalar: 
+	npm install -g expo-cli
+
+com o seguinte comando:
+	npm uninstall -g expo-cli
+
+verificar se desintalou com (deve retornar vazio):
+	where expo-cli
+	
+
+--------------------------------------------------------------
+atualizar a sua branch com as mudanças que ja foram mescladas(mergeadas) na main com o seguintes comando:
+	git pull origin main --rebase
+para evitar conflitos, se voce está na main sempre faça o pull request:
+	git pull
+
+!! Evite trabalhar numa branch antiga e desatualizada !!
+
+quer ver todas as branch ativas no repositorio:
+	git branch -a
+se finalizou a tarefa e quer deletar sua branch(apaga no respositorio):
+	git push origin --delete sua-branch
+	
