@@ -9,6 +9,10 @@ com o seguinte comando:
 
 verificar se desintalou com (deve retornar vazio):
 	where expo-cli
+
+erro tsconfig.json no terminal:
+	npm install expo
+se o erro persistir fechar todos os terminais e abrir novamente
 	
 
 --------------------------------------------------------------
@@ -23,4 +27,6 @@ quer ver todas as branch ativas no repositorio:
 	git branch -a
 se finalizou a tarefa e quer deletar sua branch(apaga no respositorio):
 	git push origin --delete sua-branch
+apagar localmente(na sua maquina):
+	git branch -d nome-da-branch
 	
