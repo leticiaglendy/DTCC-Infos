@@ -11,3 +11,5 @@ Cartela de cores projeto
 #0f4bbe azul 800
 #134395 azul 900
 #112a5a azul 950
+
+https://uicolors.app/generate/3a6ef7
