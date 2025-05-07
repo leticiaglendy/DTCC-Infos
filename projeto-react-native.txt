@@ -29,4 +29,8 @@ se finalizou a tarefa e quer deletar sua branch(apaga no respositorio):
 	git push origin --delete sua-branch
 apagar localmente(na sua maquina):
 	git branch -d nome-da-branch
-	
+
+---------------------------------------------------------------------
+site referencia icones
+
+https://icons.expo.fyi/Index
