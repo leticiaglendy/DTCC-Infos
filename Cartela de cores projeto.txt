@@ -1,0 +1,13 @@
+Cartela de cores projeto
+
+#edf8ff azul 50
+#d7edff azul 100
+#b9e2ff azul 200
+#88d1ff azul 300
+#50b6ff azul 400
+#2895ff azul 500
+#1c7cff azul 600
+#0a5eeb azul 700
+#0f4bbe azul 800
+#134395 azul 900
+#112a5a azul 950
